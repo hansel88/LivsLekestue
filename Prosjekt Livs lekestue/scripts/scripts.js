@@ -1,5 +1,6 @@
 
 $('#home').click( function() { 
+	clearActiveLinks();
 	$("#about").hide();
 	$("#gallery").hide();
 	$("#references").hide();
