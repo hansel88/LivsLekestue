@@ -255,23 +255,30 @@ $(document).mouseup(function (e)
     }
 });
 
-
 this.fadeBackgroundImage1 = function(){
-	$('#backgroundImage').attr('src', '../bilder/bakgrunn1.jpg').fadeIn(2000);
+	$('#backgroundImage1').fadeOut(1000);
+	$('#backgroundImage2').fadeIn(1000);
 
 	setTimeout(function(){ fadeBackgroundImage2(); }, 10000);
 }
 
 this.fadeBackgroundImage2 = function(){
-	$('#backgroundImage').attr('src', '../bilder/bakgrunn2.jpg').fadeIn(2000);
+	$('#backgroundImage2').fadeOut(1000);
+	$('#backgroundImage3').fadeIn(1000);
 
 	setTimeout(function(){ fadeBackgroundImage3(); }, 10000);
 }
 
 this.fadeBackgroundImage3 = function(){
-	$('#backgroundImage').attr('src', '../bilder/hovedbakgrunn.jpg').fadeIn(2000);
+	$('#backgroundImage3').fadeOut(1000);
+	$('#backgroundImage4').fadeIn(1000);
+	setTimeout(function(){ fadeBackgroundImage4(); }, 10000);
+}
+
+this.fadeBackgroundImage4 = function(){
+	$('#backgroundImage4').fadeOut(1000);
+	$('#backgroundImage').fadeIn(1000);
 	setTimeout(function(){ fadeBackgroundImage1(); }, 10000);
 }
 
-setTimeout(function(){ fadeBackgroundImage1(); }, 10000);
-
+setTimeout(function(){ fadeBackgroundImage1(); }, 12000);
