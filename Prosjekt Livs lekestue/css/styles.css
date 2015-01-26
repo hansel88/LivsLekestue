@@ -66,6 +66,10 @@ h1{
 
 }
 
+.activeLink {
+	border-bottom: 2px solid white;
+}
+
 ul{
 	display: inline;
 }

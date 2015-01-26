@@ -6,8 +6,20 @@ $('#home').click( function() {
 	$("#contact").hide();
 } );
 
+this.setActiveLink = function(link){
+	$(link).addClass("activeLink");
+}
+
+this.clearActiveLinks = function(){
+	$('#aboutLink').removeClass("activeLink");
+	$('#galleryLink').removeClass("activeLink");
+	$('#referencesLink').removeClass("activeLink");
+	$('#contactLink').removeClass("activeLink");
+}
+
 $('#aboutLink').click( function() { 
 
+	clearActiveLinks();
 	if($('#about').css("display") === "block")
 	{
 		$("#about").hide();
@@ -15,14 +27,14 @@ $('#aboutLink').click( function() {
 	else{
 		$("#about").show();
 		$("#gallery").hide();
-		$("#references").hide()
-		$("#contact").hide()
+		$("#references").hide();
+		$("#contact").hide();
+		setActiveLink($('#aboutLink'));
 	}
-
 } );
 
-
 $('#galleryLink').click( function() { 
+	clearActiveLinks();
 	if($('#gallery').css("display") === "block")
 	{
 		$("#gallery").hide();
@@ -32,11 +44,13 @@ $('#galleryLink').click( function() {
 		$("#gallery").show();
 		$("#references").hide();
 		$("#contact").hide();
+		setActiveLink($('#galleryLink'));
 	}
 
 } );
 
 $('#referencesLink').click( function() { 
+	clearActiveLinks();
 	if($('#references').css("display") === "block")
 	{
 		$("#references").hide();
@@ -46,10 +60,12 @@ $('#referencesLink').click( function() {
 		$("#gallery").hide();
 		$("#references").show();
 		$("#contact").hide();
+		setActiveLink($('#referencesLink'));
 	}
 } );
 
 $('#contactLink').click( function() { 
+	clearActiveLinks();
 	if($('#contact').css("display") === "block")
 	{
 		$("#contact").hide();
@@ -59,6 +75,7 @@ $('#contactLink').click( function() {
 		$("#gallery").hide();
 		$("#references").hide();
 		$("#contact").show();
+		setActiveLink($('#contactLink'));
 	}
 } );
 
