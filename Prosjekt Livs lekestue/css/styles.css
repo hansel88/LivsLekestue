@@ -205,9 +205,9 @@ cursor: pointer;
 
 #closeImg{
 	position: absolute;
-	top: 5px;
-	right: 5px;
-	width: 50px;
+	top: 0;
+	right: 0;
+	width: 30px;
 	background-color: rgba(0, 0, 0, 0.1);
 	border-radius: 10px;
 }
@@ -217,15 +217,15 @@ cursor: pointer;
 	position: absolute;
 	background-color: white;
 	border-radius: 20px;
-	padding-top: 4px;
+	padding: 6px 2px 2px 2px;
 }
 
 #arrowLeft{
-	left: -40px;
+	left: -25px;
 }
 
 #arrowRight{
-	right: -70px;
+	right: -51px;
 }
 
 #bigImg{
