@@ -175,8 +175,8 @@ text-align: center;
 
 #sendMailBtn{
 display: inline-block;
-color: #666;
-background-color: #eee;
+color: white;
+background-color: #468D34;
 text-transform: uppercase;
 letter-spacing: 2px;
 font-size: 12px;
@@ -189,7 +189,7 @@ cursor: pointer;
 }
 
 #sendMailBtn:hover{
-	background-color:#5C6ADA;
+	background-color:#46A634;
 	color:white;
 }
 
