@@ -1,4 +1,11 @@
 
+this.clearActiveLinks = function(){
+	$('#aboutLink').removeClass("activeLink");
+	$('#galleryLink').removeClass("activeLink");
+	$('#referencesLink').removeClass("activeLink");
+	$('#contactLink').removeClass("activeLink");
+}
+
 $('#home').click( function() { 
 	clearActiveLinks();
 	$("#about").hide();
@@ -9,13 +16,6 @@ $('#home').click( function() {
 
 this.setActiveLink = function(link){
 	$(link).addClass("activeLink");
-}
-
-this.clearActiveLinks = function(){
-	$('#aboutLink').removeClass("activeLink");
-	$('#galleryLink').removeClass("activeLink");
-	$('#referencesLink').removeClass("activeLink");
-	$('#contactLink').removeClass("activeLink");
 }
 
 $('#aboutLink').click( function() { 
@@ -300,3 +300,32 @@ this.fadeBackgroundImage4 = function(){
 }
 
 setTimeout(function(){ fadeBackgroundImage1(); }, 12000);
+
+ $('#mailForm').on('submit', function(e) {
+    e.preventDefault();
+
+  // stopp formet i å bli submitted
+
+  
+  // en referanse til form-taggen
+  var $form = $(this);
+  
+  // lag et options-objekt som gir info til $.ajax etterpå
+  var opts = {
+    url: '../php/contact.php', // send ajax-request til denne filen
+    type: 'POST', // http-verb
+    content: $form.serialize() // serialiser skjemaet og legg det i post-bodyen
+  };
+  
+  $.when($.ajax(opts)).then(function() {
+    // suksess - dvs 200 i respons fra server
+    alert('hurra, vi har fått mailen din!');
+  }, function() {
+    // epic fail - dvs 500 i respons fra server
+    alert('oj, noe gikk feil - skrev du feil epostadresse?')
+  });
+});
+
+alert('dfkjdf');
+ //$(document).ready(function() {
+//});
