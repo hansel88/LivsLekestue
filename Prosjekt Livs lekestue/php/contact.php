@@ -1,19 +1,28 @@
 <?php 
-    if(isset($_POST['submit'])){
-        $to = "hpn_x@hotmail.com"; // this is your Email address
-        $from = $_POST['mailInput']; // this is the sender's Email address
-        $name = $_POST['nameInput'];
-        $phone = $_POST['phoneInput'];
-        $subject = "forespørsel til Livs Lekestue";
-        $subject2 = "";
-        $message = $name . " " . " wrote the following:" . "\n\n" . $_POST['messageInput'] + "\n\n" + "Phone: " + $phone;
+if(!isset($_POST['mailInput'], $_POST['nameInput'], $_POST['phoneInput'], $_POST['messageInput'])) {
+    http_response_code(400); // 400 bad request
+    exit();
+}
+else {
+    $to = "hpn_x@hotmail.com"; // gå til mailinator.com og type inn hptest@mailinator.com for å se mail
 
-        $headers = "From:" . $from;
-        mail($to,$subject,$message,$headers);
-        echo "<script type='text/javascript'>alert('Din forespørsel er sendt!');</script>";
-        }
-        else
-        {
-            echo "<script type='text/javascript'>alert('Noe gikk galt :(');</script>";
-        }
+    $from = $_POST['mailInput'];
+    $name = $_POST['nameInput'];
+    $phone = $_POST['phoneInput'];
+
+    $subject = "Forespørsel til Livs Lekestue";
+
+    $message = $name . " " . " skrev følgende:" . "\n\n" . $_POST['messageInput'] + "\n\n" + "Tlf: " + $phone;
+
+    $headers = "Fra:" . $from;
+    if(mail($to,$subject,$message,$headers)) {
+        http_response_code(200);  // mail ble sendt, all is well
+        exit();
+    }
+    else
+    {
+        http_response_code(500); // klarte ikke å sende mail
+        exit();
+    }
+}
 ?>

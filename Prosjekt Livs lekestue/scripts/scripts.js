@@ -314,7 +314,7 @@ setTimeout(function(){ fadeBackgroundImage1(); }, 12000);
   var opts = {
     url: 'php/contact.php', // send ajax-request til denne filen
     type: 'POST', // http-verb
-    content: $form.serialize() // serialiser skjemaet og legg det i post-bodyen
+    data: $form.serialize() // serialiser skjemaet og legg det i post-bodyen
   };
   
   $.when($.ajax(opts)).then(function() {
