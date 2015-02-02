@@ -6,7 +6,7 @@ if(!isset($_POST['mailInput'], $_POST['nameInput'], $_POST['phoneInput'], $_POST
     exit();
 }
 else {
-    $to = "hpn_x@hotmail.com"; // gå til mailinator.com og type inn hptest@mailinator.com for å se mail
+    $to = "hptest@mailinator.com"; // gå til mailinator.com og type inn hptest@mailinator.com for å se mail
 
     $from = $_POST['mailInput'];
     $name = $_POST['nameInput'];
@@ -14,7 +14,7 @@ else {
 
     $subject = "Forespørsel til Livs Lekestue";
 
-    $message = $name . " " . " wrote the following:" . "\n\n" . $_POST['messageInput'] + "\n\n" + "Phone: " + $phone;
+    $message = $name . " " . " skrev følgende:" . "\n\n" . $_POST['messageInput'] . "\n\n" . "Tlf: " . $phone;
 
     $headers = "From:" . $from;
     if(mail($to,$subject,$message,$headers)) {
