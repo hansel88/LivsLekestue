@@ -12,4 +12,8 @@
         mail($to,$subject,$message,$headers);
         echo "<script type='text/javascript'>alert('Din forespørsel er sendt!');</script>";
         }
+        else
+        {
+            echo "<script type='text/javascript'>alert('Noe gikk galt :(');</script>";
+        }
 ?>

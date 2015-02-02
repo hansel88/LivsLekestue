@@ -161,51 +161,51 @@ $('#arrowLeft').click( function() {
 	var current = $('#bigImg').attr('src');
 	if (current.toLowerCase().indexOf("bilde1.jpg") >= 0)
 	{
-		$('#bigImg').attr('src', '../bilder/galleri/bilde12.jpg');
+		$('#bigImg').attr('src', 'bilder/galleri/bilde12.jpg');
 	}
 	else if (current.toLowerCase().indexOf("bilde2.jpg") >= 0)
 	{
-		$('#bigImg').attr('src', '../bilder/galleri/bilde1.jpg');
+		$('#bigImg').attr('src', 'bilder/galleri/bilde1.jpg');
 	}
 	else if (current.toLowerCase().indexOf("bilde3.jpg") >= 0)
 	{
-		$('#bigImg').attr('src', '../bilder/galleri/bilde2.jpg');
+		$('#bigImg').attr('src', 'bilder/galleri/bilde2.jpg');
 	}
 	else if (current.toLowerCase().indexOf("bilde4.jpg") >= 0)
 	{
-		$('#bigImg').attr('src', '../bilder/galleri/bilde3.jpg');
+		$('#bigImg').attr('src', 'bilder/galleri/bilde3.jpg');
 	}
 	else if (current.toLowerCase().indexOf("bilde5.jpg") >= 0)
 	{
-		$('#bigImg').attr('src', '../bilder/galleri/bilde4.jpg');
+		$('#bigImg').attr('src', 'bilder/galleri/bilde4.jpg');
 	}
 	else if (current.toLowerCase().indexOf("bilde6.jpg") >= 0)
 	{
-		$('#bigImg').attr('src', '../bilder/galleri/bilde5.jpg');
+		$('#bigImg').attr('src', 'bilder/galleri/bilde5.jpg');
 	}
 	else if (current.toLowerCase().indexOf("bilde7.jpg") >= 0)
 	{
-		$('#bigImg').attr('src', '../bilder/galleri/bilde6.jpg');
+		$('#bigImg').attr('src', 'bilder/galleri/bilde6.jpg');
 	}
 	else if (current.toLowerCase().indexOf("bilde8.jpg") >= 0)
 	{
-		$('#bigImg').attr('src', '../bilder/galleri/bilde7.jpg');
+		$('#bigImg').attr('src', 'bilder/galleri/bilde7.jpg');
 	}
 	else if (current.toLowerCase().indexOf("bilde9.jpg") >= 0)
 	{
-		$('#bigImg').attr('src', '../bilder/galleri/bilde8.jpg');
+		$('#bigImg').attr('src', 'bilder/galleri/bilde8.jpg');
 	}
 	else if (current.toLowerCase().indexOf("bilde10.jpg") >= 0)
 	{
-		$('#bigImg').attr('src', '../bilder/galleri/bilde9.jpg');
+		$('#bigImg').attr('src', 'bilder/galleri/bilde9.jpg');
 	}
 	else if (current.toLowerCase().indexOf("bilde11.jpg") >= 0)
 	{
-		$('#bigImg').attr('src', '../bilder/galleri/bilde10.jpg');
+		$('#bigImg').attr('src', 'bilder/galleri/bilde10.jpg');
 	}
 	else if (current.toLowerCase().indexOf("bilde12.jpg") >= 0)
 	{
-		$('#bigImg').attr('src', '../bilder/galleri/bilde11.jpg');
+		$('#bigImg').attr('src', 'bilder/galleri/bilde11.jpg');
 	}
 
 } );
@@ -214,51 +214,51 @@ $('#arrowRight').click( function() {
 	var current = $('#bigImg').attr('src');
 	if (current.toLowerCase().indexOf("bilde1.jpg") >= 0)
 	{
-		$('#bigImg').attr('src', '../bilder/galleri/bilde2.jpg');
+		$('#bigImg').attr('src', 'bilder/galleri/bilde2.jpg');
 	}
 	else if (current.toLowerCase().indexOf("bilde2.jpg") >= 0)
 	{
-		$('#bigImg').attr('src', '../bilder/galleri/bilde3.jpg');
+		$('#bigImg').attr('src', 'bilder/galleri/bilde3.jpg');
 	}
 	else if (current.toLowerCase().indexOf("bilde3.jpg") >= 0)
 	{
-		$('#bigImg').attr('src', '../bilder/galleri/bilde4.jpg');
+		$('#bigImg').attr('src', 'bilder/galleri/bilde4.jpg');
 	}
 	else if (current.toLowerCase().indexOf("bilde4.jpg") >= 0)
 	{
-		$('#bigImg').attr('src', '../bilder/galleri/bilde5.jpg');
+		$('#bigImg').attr('src', 'bilder/galleri/bilde5.jpg');
 	}
 	else if (current.toLowerCase().indexOf("bilde5.jpg") >= 0)
 	{
-		$('#bigImg').attr('src', '../bilder/galleri/bilde6.jpg');
+		$('#bigImg').attr('src', 'bilder/galleri/bilde6.jpg');
 	}
 	else if (current.toLowerCase().indexOf("bilde6.jpg") >= 0)
 	{
-		$('#bigImg').attr('src', '../bilder/galleri/bilde7.jpg');
+		$('#bigImg').attr('src', 'bilder/galleri/bilde7.jpg');
 	}
 	else if (current.toLowerCase().indexOf("bilde7.jpg") >= 0)
 	{
-		$('#bigImg').attr('src', '../bilder/galleri/bilde8.jpg');
+		$('#bigImg').attr('src', 'bilder/galleri/bilde8.jpg');
 	}
 	else if (current.toLowerCase().indexOf("bilde8.jpg") >= 0)
 	{
-		$('#bigImg').attr('src', '../bilder/galleri/bilde9.jpg');
+		$('#bigImg').attr('src', 'bilder/galleri/bilde9.jpg');
 	}
 	else if (current.toLowerCase().indexOf("bilde9.jpg") >= 0)
 	{
-		$('#bigImg').attr('src', '../bilder/galleri/bilde10.jpg');
+		$('#bigImg').attr('src', 'bilder/galleri/bilde10.jpg');
 	}
 	else if (current.toLowerCase().indexOf("bilde10.jpg") >= 0)
 	{
-		$('#bigImg').attr('src', '../bilder/galleri/bilde11.jpg');
+		$('#bigImg').attr('src', 'bilder/galleri/bilde11.jpg');
 	}
 	else if (current.toLowerCase().indexOf("bilde11.jpg") >= 0)
 	{
-		$('#bigImg').attr('src', '../bilder/galleri/bilde12.jpg');
+		$('#bigImg').attr('src', 'bilder/galleri/bilde12.jpg');
 	}
 	else if (current.toLowerCase().indexOf("bilde12.jpg") >= 0)
 	{
-		$('#bigImg').attr('src', '../bilder/galleri/bilde1.jpg');
+		$('#bigImg').attr('src', 'bilder/galleri/bilde1.jpg');
 	}
 } );
 
@@ -312,7 +312,7 @@ setTimeout(function(){ fadeBackgroundImage1(); }, 12000);
   
   // lag et options-objekt som gir info til $.ajax etterpå
   var opts = {
-    url: '../php/contact.php', // send ajax-request til denne filen
+    url: 'php/contact.php', // send ajax-request til denne filen
     type: 'POST', // http-verb
     content: $form.serialize() // serialiser skjemaet og legg det i post-bodyen
   };
@@ -326,6 +326,5 @@ setTimeout(function(){ fadeBackgroundImage1(); }, 12000);
   });
 });
 
-alert('dfkjdf');
  //$(document).ready(function() {
 //});
