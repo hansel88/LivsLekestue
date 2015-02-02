@@ -321,6 +321,9 @@ console.log($form.serialize());
   $.when($.ajax(opts)).then(function() {
     // suksess - dvs 200 i respons fra server
     alert('hurra, vi har fått mailen din!');
+    $( '#mailForm' ).each(function(){
+    this.reset();
+});
   }, function() {
     // epic fail - dvs 500 i respons fra server
     alert('oj, noe gikk feil - skrev du feil epostadresse?')

@@ -6,7 +6,7 @@ if(!isset($_POST['mailInput'], $_POST['nameInput'], $_POST['phoneInput'], $_POST
     exit();
 }
 else {
-    $to = "hptest@mailinator.com"; // gå til mailinator.com og type inn hptest@mailinator.com for å se mail
+    $to = "hpn_x@hotmail.com"; // gå til mailinator.com og type inn hptest@mailinator.com for å se mail
 
     $from = $_POST['mailInput'];
     $name = $_POST['nameInput'];
