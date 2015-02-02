@@ -6,7 +6,7 @@ this.clearActiveLinks = function(){
 	$('#contactLink').removeClass("activeLink");
 }
 
-$('#home').click( function() { 
+$('#home').click( function() {
 	clearActiveLinks();
 	$("#about").hide();
 	$("#gallery").hide();
@@ -18,7 +18,7 @@ this.setActiveLink = function(link){
 	$(link).addClass("activeLink");
 }
 
-$('#aboutLink').click( function() { 
+$('#aboutLink').click( function() {
 
 	clearActiveLinks();
 	if($('#about').css("display") === "block")
@@ -34,7 +34,7 @@ $('#aboutLink').click( function() {
 	}
 } );
 
-$('#galleryLink').click( function() { 
+$('#galleryLink').click( function() {
 	clearActiveLinks();
 	if($('#gallery').css("display") === "block")
 	{
@@ -50,7 +50,7 @@ $('#galleryLink').click( function() {
 
 } );
 
-$('#referencesLink').click( function() { 
+$('#referencesLink').click( function() {
 	clearActiveLinks();
 	if($('#references').css("display") === "block")
 	{
@@ -65,7 +65,7 @@ $('#referencesLink').click( function() {
 	}
 } );
 
-$('#contactLink').click( function() { 
+$('#contactLink').click( function() {
 	clearActiveLinks();
 	if($('#contact').css("display") === "block")
 	{
@@ -80,84 +80,84 @@ $('#contactLink').click( function() {
 	}
 } );
 
-$('#thumb1Link').click( function() { 
+$('#thumb1Link').click( function() {
 	var newSrc = $('#thumb1').attr('src');
 	$('#bigImg').attr('src', newSrc);
 	$("#bigImgBox").css("display", "block");
 } );
 
-$('#thumb2Link').click( function() { 
+$('#thumb2Link').click( function() {
 	var newSrc = $('#thumb2').attr('src');
 	$('#bigImg').attr('src', newSrc);
 	$("#bigImgBox").css("display", "block");
 } );
 
-$('#thumb3Link').click( function() { 
+$('#thumb3Link').click( function() {
 	var newSrc = $('#thumb3').attr('src');
 	$('#bigImg').attr('src', newSrc);
 	$("#bigImgBox").css("display", "block");
 } );
 
-$('#thumb4Link').click( function() { 
+$('#thumb4Link').click( function() {
 	var newSrc = $('#thumb4').attr('src');
 	$('#bigImg').attr('src', newSrc);
 	$("#bigImgBox").css("display", "block");
 } );
 
-$('#thumb5Link').click( function() { 
+$('#thumb5Link').click( function() {
 	var newSrc = $('#thumb5').attr('src');
 	$('#bigImg').attr('src', newSrc);
 	$("#bigImgBox").css("display", "block");
 } );
 
-$('#thumb6Link').click( function() { 
+$('#thumb6Link').click( function() {
 	var newSrc = $('#thumb6').attr('src');
 	$('#bigImg').attr('src', newSrc);
 	$("#bigImgBox").css("display", "block");
 } );
 
-$('#thumb7Link').click( function() { 
+$('#thumb7Link').click( function() {
 	var newSrc = $('#thumb7').attr('src');
 	$('#bigImg').attr('src', newSrc);
 	$("#bigImgBox").css("display", "block");
 } );
 
-$('#thumb8Link').click( function() { 
+$('#thumb8Link').click( function() {
 	var newSrc = $('#thumb8').attr('src');
 	$('#bigImg').attr('src', newSrc);
 	$("#bigImgBox").css("display", "block");
 } );
 
-$('#thumb9Link').click( function() { 
+$('#thumb9Link').click( function() {
 	var newSrc = $('#thumb9').attr('src');
 	$('#bigImg').attr('src', newSrc);
 	$("#bigImgBox").css("display", "block");
 } );
 
-$('#thumb10Link').click( function() { 
+$('#thumb10Link').click( function() {
 	var newSrc = $('#thumb10').attr('src');
 	$('#bigImg').attr('src', newSrc);
 	$("#bigImgBox").css("display", "block");
 } );
 
-$('#thumb11Link').click( function() { 
+$('#thumb11Link').click( function() {
 	var newSrc = $('#thumb11').attr('src');
 	$('#bigImg').attr('src', newSrc);
 	$("#bigImgBox").css("display", "block");
 } );
 
-$('#thumb12Link').click( function() { 
+$('#thumb12Link').click( function() {
 	var newSrc = $('#thumb12').attr('src');
 	$('#bigImg').attr('src', newSrc);
 	$("#bigImgBox").css("display", "block");
 } );
 
-$('#closeImg').click( function() { 
+$('#closeImg').click( function() {
 	$("#bigImgBox").css("display", "none");
 } );
 
 /* functions for arrows in gallery */
-$('#arrowLeft').click( function() { 
+$('#arrowLeft').click( function() {
 	var current = $('#bigImg').attr('src');
 	if (current.toLowerCase().indexOf("bilde1.jpg") >= 0)
 	{
@@ -210,7 +210,7 @@ $('#arrowLeft').click( function() {
 
 } );
 
-$('#arrowRight').click( function() { 
+$('#arrowRight').click( function() {
 	var current = $('#bigImg').attr('src');
 	if (current.toLowerCase().indexOf("bilde1.jpg") >= 0)
 	{
@@ -306,17 +306,18 @@ setTimeout(function(){ fadeBackgroundImage1(); }, 12000);
 
   // stopp formet i å bli submitted
 
-  
+
   // en referanse til form-taggen
   var $form = $(this);
-  
+
   // lag et options-objekt som gir info til $.ajax etterpå
   var opts = {
     url: 'php/contact.php', // send ajax-request til denne filen
     type: 'POST', // http-verb
     data: $form.serialize() // serialiser skjemaet og legg det i post-bodyen
   };
-  
+console.log($form.serialize());
+
   $.when($.ajax(opts)).then(function() {
     // suksess - dvs 200 i respons fra server
     alert('hurra, vi har fått mailen din!');

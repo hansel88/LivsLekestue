@@ -1,10 +1,12 @@
+
 <?php 
+// Sjekker om alt er fylt ut som det skal
 if(!isset($_POST['mailInput'], $_POST['nameInput'], $_POST['phoneInput'], $_POST['messageInput'])) {
     http_response_code(400); // 400 bad request
     exit();
 }
 else {
-    $to = "hpn_x@hotmail.com"; // gå til mailinator.com og type inn hptest@mailinator.com for å se mail
+    $to = "hptest@mailinator.com"; // gå til mailinator.com og type inn hptest@mailinator.com for å se mail
 
     $from = $_POST['mailInput'];
     $name = $_POST['nameInput'];
@@ -12,9 +14,10 @@ else {
 
     $subject = "Forespørsel til Livs Lekestue";
 
-    $message = $name . " " . " skrev følgende:" . "\n\n" . $_POST['messageInput'] + "\n\n" + "Tlf: " + $phone;
+    $message = $name . " " . " wrote the following:" . "\n\n" . $_POST['messageInput'] + "\n\n" + "Phone: " + $phone;
 
-    $headers = "Fra:" . $from;
+    $headers = "From:" . $from;
+>>>>>>> 4c984f0dc634ea1d6a2da3fd3ac450465a52aa33
     if(mail($to,$subject,$message,$headers)) {
         http_response_code(200);  // mail ble sendt, all is well
         exit();
