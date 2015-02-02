@@ -17,7 +17,6 @@ else {
     $message = $name . " " . " wrote the following:" . "\n\n" . $_POST['messageInput'] + "\n\n" + "Phone: " + $phone;
 
     $headers = "From:" . $from;
->>>>>>> 4c984f0dc634ea1d6a2da3fd3ac450465a52aa33
     if(mail($to,$subject,$message,$headers)) {
         http_response_code(200);  // mail ble sendt, all is well
         exit();
